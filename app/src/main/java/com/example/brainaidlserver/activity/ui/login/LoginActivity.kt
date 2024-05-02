@@ -124,7 +124,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         override fun onServiceDisconnected(name: ComponentName?) {
-            //Log.i("Brain", "onServiceDisconnected.......")
+            Log.i("Brain", "onServiceDisconnected.......")
         }
     }
 
