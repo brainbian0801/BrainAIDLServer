@@ -119,13 +119,12 @@ class LoginActivity : AppCompatActivity() {
 
     private val serviceConnection = object: ServiceConnection {
         override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
-            //Log.i("Brain", "onServiceConnected.......")
+            Log.i("Brain", "onServiceConnected.......")
             remoteServer = IPersonManager.Stub.asInterface(service)
         }
 
         override fun onServiceDisconnected(name: ComponentName?) {
-            //Log.i("Brain", "onServiceDisconnected.......")
-
+            Log.i("Brain", "onServiceDisconnected.......")
         }
     }
 
